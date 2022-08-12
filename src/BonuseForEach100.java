@@ -1,16 +1,16 @@
 public class BonuseForEach100 {
     public static void main(String[] args) {
-        int x = 100; //начальный счет
-        int y = 1001; //сумма пополнения
-        int z = x + y; // баланс
+        int balance0 = 100; //начальный счет
+        int amount = 1001; //сумма пополнения
+        int balance1 = balance0 + amount; // баланс
 
         int b;
-        if (y > 1000) {
-            b = y / 100;
+        if (amount > 1000) {
+            b = amount / 100;
         } else {
             b = 0;
         }
-        System.out.println("Баланс счета:" + z);
+        System.out.println("Баланс счета:" + balance1);
         System.out.println("Начисленные бонусы:" + b);
 
     }
